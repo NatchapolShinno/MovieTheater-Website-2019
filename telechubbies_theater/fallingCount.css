@@ -1,0 +1,81 @@
+body {
+    background-image: url('./img/falling.jpg');
+    background-size: cover;
+   
+}
+.container {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.container span {
+  text-transform: uppercase;
+  display: block;
+}
+
+@keyframes enter {
+  0% {
+    color: black;
+    margin-bottom: -8px;
+  }
+  30% {
+    color: black;
+    letter-spacing: 5px;
+    margin-bottom: -8px;
+  }
+  95% {
+    letter-spacing: 1.6px;
+    margin-bottom: -8px;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  width: 100%;
+  background: none;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  margin: 12px 0;
+  text-transform: uppercase;
+  position: relative;
+  animation: enter 3s 1;
+  top: 330px;
+  letter-spacing: 1.5px;
+}
+
+.btn:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+h1 {
+    font-size: 3.5em;
+    
+}
+.countdown {
+    display: inline-block;
+    font-size: 1.7em;
+    padding: 1em;
+    font-family: sans-serif;
+}
+.countdowndiv {
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 750px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.countdown span{
+    display: block;
+    font-size: 5rem;
+
+}

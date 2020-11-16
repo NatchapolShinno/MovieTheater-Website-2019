@@ -1,0 +1,30 @@
+@charset "utf-8";
+body p {
+}
+#theater-name {
+  padding: 50px 10px; /* Some padding */
+  color: white;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+#banner {
+	object-fit: contain;
+}
+
+#banner-img {
+	max-width: 100%;
+}
+
+#banner-img:hover {
+  opacity: 90%;
+}
+
+table {
+	border: 1px solid white;
+}

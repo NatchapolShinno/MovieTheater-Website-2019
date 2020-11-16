@@ -1,0 +1,225 @@
+
+.category-name {
+  color: white;
+  margin-left: 50px;
+  border-bottom: 2px solid red;
+  width: 300px;
+  font-family: "Fredoka One" !important;
+}
+
+
+
+/* ---------------Movie List---------------------*/
+body{
+  /*margin-top: 100px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;*/
+  background: #333 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.glide__slide img{
+  width: 100%;
+  left: 200px;
+}
+
+.glide__slide{
+  filter: blur(0px);
+  opacity: .7;
+  transition: .3s linear;
+}
+
+.glide__slide--active{
+  opacity: 1;
+  filter: none;
+  transform: scale(1.1);
+}
+
+.glide__slides{
+  overflow: visible;
+}
+/*----------------Overlay-----------*/
+.card {
+  position: absolute;
+  top: 200px;
+  left:40%;
+  transform: translate(-50%,-50%);
+  width: 225px;
+  height: 338px;
+  background: #000;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0,5);
+}
+
+.card .poster {
+  position: relative;
+  overflow: hidden;
+
+}
+.card .poster:before {
+    content: '';
+    position: absolute;
+    bottom: -182px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000 50%,transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.card:hover .poster:before{
+    bottom: 0;
+
+}
+
+.card .poster img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card:hover .poster img {
+  filter: blur(5px);
+  transform: translateY(-50px);
+}
+
+.detail {
+    position: absolute;
+    padding: 0px 10px 10px 10px;
+    width: 100%;
+    height: 90%;
+    bottom: -230px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 2;
+}
+.card:hover .detail{
+    bottom: 0;
+}
+ 
+.detail h2 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.detail h2 span {
+    font-size: 14px;
+    color: #ff9800;
+
+}
+.rating {
+    position: relative;
+    padding: 5px 0;
+
+}
+
+.rating .fas,.far  {
+    color: #f7f406;
+    margin-right: 2px;
+    font-size: 16px;
+}
+
+.rating span{
+    color: #fff;
+    padding: 0 5px;
+}
+
+.tag {
+    position: relative;
+    margin-top: 5px;
+
+}
+
+.tag span{
+    padding:  2px 5px;
+    margin-right: 2px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    background: rgb(100, 100, 100);
+}
+
+.tag span.action{
+    background: #f70661;
+}
+.tag span.fantasy{
+    background: #7206f7;
+}
+.tag span.animation{
+  background: rgb(72, 211, 202);
+}
+.tag span.drama{
+  background: rgb(107, 167, 65);
+}
+
+.tag span.comedy{
+  background: rgb(243, 175, 86);
+}
+
+.tag span.horror{
+  background: #5F52B3;
+}
+
+.tag span.adventure{
+  background: #FF4545;
+}
+
+.tag span.thriller{
+  background: #7800BF;
+}
+
+
+
+
+.info{
+    color: #fff;
+    font-size: 12px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    max-height: 130px;
+}
+
+.info::-webkit-scrollbar {
+ display: none;
+}
+
+.info p{
+    margin: 15px 0 10px;
+    
+}
+.star {
+    position: relative;
+
+}
+.star h4{
+   margin: 0;
+   padding: 0;
+   font-size: 20px;
+   color: #f7f406;
+}
+
+.star ul{
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex;
+}
+.star ul li{
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 6px;
+    border: 2px solid #fff;
+}
+
+.star ul li img{
+    width: 100%;
+
+}

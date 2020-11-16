@@ -1,0 +1,17 @@
+.image-preview{
+    width: 500px;
+    min-height: 300px;
+    border: 2px solid white;
+    margin-top: 15px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+}
+.image-preview__image{
+    width:100%;
+    display:none;
+}

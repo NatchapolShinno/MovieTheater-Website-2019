@@ -1,0 +1,15 @@
+.movie_poster {
+	text-align: center;
+}
+
+.movie_poster img {
+	height: 300px !important;
+}
+
+.left-column {
+	border-right: 3px solid gray;
+}
+
+.book-left .book-right li {
+	height: 34px !important;
+}

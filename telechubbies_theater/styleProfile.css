@@ -1,0 +1,21 @@
+.profile-img {
+	margin: 50px;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.member-info-field {
+	margin-bottom: : 20px;
+	max-width: 300px;
+}
+
+label {
+	margin-top: 20px;
+}
+
+.btn {
+}
+
+@import "/path/to/bootstrap/less/variables";
+@import "/path/to/bootstrap-datetimepicker/src/less/bootstrap-datetimepicker-build.less";
